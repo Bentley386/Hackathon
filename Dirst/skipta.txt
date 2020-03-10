@@ -1,0 +1,148 @@
+~============
+~Variable init
+~============
+	VarInit!fnc
+	csv_input.csv
+	csa_[words].csv
+	csv_values.csv
+	civ_S.csv
+	civ_V.csv
+	civ_loop.csv
+	civ_loopCounter.csv
+	civ_loopCounter2.csv
+	csv_tempString.csv
+	civ_value.csv
+	csv_svalue.csv
+	civ_length.csv
+	civ_conditioner.csv
+	civ_size.csv
+	civ_inRow.csv
+	civ_lineSize.csv
+	civ_v.csv
+	civ_conditioner2.csv
+	civ_c3.csv
+	civ_result.csv
+	civ_junk.csv
+	civ_helper.csv
+	csv_need.csv
+abs_junk_0.dat
+	InputBlock!fnc
+	~============
+	~print with a newline
+	~============
+	dsl_Write the input data (eg -q20 6 led display-q)-c.txt
+	~============
+	~scan for string input
+	~============
+	rds_input.txt
+	~============
+	~concat keyword and convert to array of strings
+	~============
+	cat_input_input_ lebesgue.txt
+	ssa_[words]_input_ .exe
+	~============
+	~extract first two numbers
+	~============
+	gsv_need_[words]_0.zip
+	sti_S_need.exe
+	gsv_need_[words]_1.zip
+	sti_V_need.exe
+	~==========
+	~Prepare to loop
+	~==========
+	abs_loopCounter_2.dat
+	abs_loopCounter2_0.dat
+	abs_loop_1.dat
+		LoopThruWords!lpc_loop
+		gsv_tempString_[words]_loopCounter.zip
+		cat_tempString_tempString_Đ.txt
+		idx_value_tempString_Đ.txt
+		its_svalue_value.exe
+		cat_values_values_svalue.txt
+		cat_values_values_ .txt
+		add_loopCounter2_loopCounter2_1.dat
+		add_loopCounter_loopCounter_1.dat
+		dif_loop_tempString_lebesgueĐ.txt
+	~============
+	~[words] now contains word sizes
+	~======================
+	ssa_[words]_values_ .exe
+	~==============
+	~In length we have number of words.
+	~==============
+	set_length_loopCounter2.dat
+	sub_length_length_1.dat
+~============
+~============ Find max value
+~===========
+civ_max.csv
+abs_max_0.dat
+abs_loop_1.dat
+abs_loopCounter_0.dat
+	LoopThruSizes!lpc_loop
+	gsv_tempString_[words]_loopCounter.zip
+	sti_value_tempString.exe
+	mor_conditioner_max_value.dat
+		ChangeMax!nif_conditioner
+		set_max_value.dat
+	add_loopCounter_loopCounter_1.dat
+	neq_loop_loopCounter_length.dat
+~============
+~============
+mor_conditioner_max_S.dat
+	IfMore!dif_conditioner
+	dsi_0.dat
+abs_junk_1.dat
+	IfLess!nif_conditioner
+	~==============
+	~============ Now everything happens here
+	div_size_S_max.dat
+		LoopUntilSizeZero!lpc_size
+		abs_loopCounter_0.dat
+		abs_loop_1.dat
+		abs_v_size.dat
+		abs_inRow_0.dat
+		abs_result_size.dat
+			TryIt!lpc_loop
+			gsv_tempString_[words]_loopCounter.zip
+			sti_value_tempString.exe
+			add_loopCounter_loopCounter_1.dat
+			add_lineSize_value_1.dat
+			mul_lineSize_lineSize_size.dat
+			add_lineSize_lineSize_inRow.dat
+			mor_conditioner_lineSize_S.dat
+				IfMore!dif_conditioner
+				abs_helper_0.dat
+				add_loopCounter2_S_size.dat
+				let_conditioner2_lineSize_loopCounter2.dat
+					IfLessEq!dif_conditioner2
+					abs_inRow_0.dat
+					add_v_v_size.dat
+					abs_helper_1.dat
+				abs_junk_1.dat
+					Else!nif_conditioner2
+					add_v_v_size.dat
+					abs_inRow_value.dat
+					add_inRow_inRow_1.dat
+					mul_inRow_inRow_size.dat
+			abs_junk_1.dat
+				IfNotMore!nif_conditioner
+				abs_inRow_lineSize.dat
+			~=============0
+			neq_junk_loopCounter_length.dat
+				IfSame!nif_junk
+					cehelperninic!dif_helper
+					sub_v_v_size.dat
+			mor_conditioner_v_V.dat
+				IfMore!dif_conditioner
+				abs_result_0.dat
+				abs_loopCounter_length.dat
+			neq_loop_loopCounter_length.dat
+		abs_junk_1.dat
+			IfZero!nif_result
+			sub_size_size_1.dat
+		abs_junk_1.dat
+			IfNonZero!dif_result
+			abs_result_size.dat
+			abs_size_0.dat
+	dsi_result.dat
