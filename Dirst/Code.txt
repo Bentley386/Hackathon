@@ -25,8 +25,12 @@
 	civ_junk.csv
 	civ_helper.csv
 	csv_need.csv
-abs_junk_0.dat
+	civ_left.csv
+	civ_middle.csv
+~===========
+abs_junk_1.dat
 	InputBlock!fnc
+	~============
 	~============
 	~print with a newline
 	~============
@@ -97,34 +101,38 @@ abs_junk_1.dat
 	~==============
 	~============ Now everything happens here
 	div_size_S_max.dat
-		LoopUntilSizeZero!lpc_size
+	abs_left_0.dat
+	let_c3_left_size.dat
+		LoopUntilSizeZero!lpc_c3
+		add_middle_left_size.dat
+		div_middle_middle_2.dat
 		abs_loopCounter_0.dat
 		abs_loop_1.dat
-		abs_v_size.dat
+		abs_v_middle.dat
 		abs_inRow_0.dat
-		abs_result_size.dat
+		abs_result_1.dat
 			TryIt!lpc_loop
+			abs_helper_0.dat
 			gsv_tempString_[words]_loopCounter.zip
 			sti_value_tempString.exe
 			add_loopCounter_loopCounter_1.dat
 			add_lineSize_value_1.dat
-			mul_lineSize_lineSize_size.dat
+			mul_lineSize_lineSize_middle.dat
 			add_lineSize_lineSize_inRow.dat
 			mor_conditioner_lineSize_S.dat
 				IfMore!dif_conditioner
-				abs_helper_0.dat
-				add_loopCounter2_S_size.dat
+				add_loopCounter2_S_middle.dat
 				let_conditioner2_lineSize_loopCounter2.dat
 					IfLessEq!dif_conditioner2
 					abs_inRow_0.dat
-					add_v_v_size.dat
+					add_v_v_middle.dat
 					abs_helper_1.dat
 				abs_junk_1.dat
 					Else!nif_conditioner2
-					add_v_v_size.dat
+					add_v_v_middle.dat
 					abs_inRow_value.dat
 					add_inRow_inRow_1.dat
-					mul_inRow_inRow_size.dat
+					mul_inRow_inRow_middle.dat
 			abs_junk_1.dat
 				IfNotMore!nif_conditioner
 				abs_inRow_lineSize.dat
@@ -132,17 +140,20 @@ abs_junk_1.dat
 			neq_junk_loopCounter_length.dat
 				IfSame!nif_junk
 					cehelperninic!dif_helper
-					sub_v_v_size.dat
+					sub_v_v_middle.dat
 			mor_conditioner_v_V.dat
 				IfMore!dif_conditioner
 				abs_result_0.dat
 				abs_loopCounter_length.dat
 			neq_loop_loopCounter_length.dat
-		abs_junk_1.dat
-			IfZero!nif_result
-			sub_size_size_1.dat
-		abs_junk_1.dat
-			IfNonZero!dif_result
-			abs_result_size.dat
-			abs_size_0.dat
-	dsi_result.dat
+				ifzero!nif_loop
+					IfZero!dif_result
+					add_left_middle_1.dat
+				abs_junk_1.dat
+					IfNonZero!nif_result
+					sub_size_middle_1.dat
+		let_c3_left_size.dat
+	dsi_size.dat
+~=============================
+~===============================
+~===========================0
