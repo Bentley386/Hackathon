@@ -40,18 +40,19 @@ Output:
 
 ## Solution
 
-First version of the program and the basic algorithm was written in c++. It's available in c++ folder and takes input from a text file.
-The main program is written in Dirst ( All information regarding Dirst is on: https://esolangs.org/wiki/Dirst).
-Dirst is an esoteric language, in which the program structure is represented by a tree of folders and files.
-So for example, different folders represent loops/if statements (depending on their names),
-while the existence of "dsl_Hello world.txt" file writes "Hello world" to stdout.
+My main goal was to write the program in Dirst, which was more difficult. In case it turned out speed mattered, I've also programmed the solution in c++.
 
-The Dirst program uses the same algorithm as the c++ one, with some obvious differences (Dirst has a built in method to split a string into array, but has no working method to get the length of a string or an array).
+### C++
 
-To run the program, type the following in the console, while located in the "Dirst" folder:
-`Dirst.exe CodeImproved`
+The C++ program simply finds the solution by trial and error, using binary search to speed up the process. To run it move to the "c++" folder and type `./hackathon.exe` in the console.
 
-The difference between the two different versions of the program "Code" and "CodeImproved" are that the second one uses bisection to find the solution, while the first one does not.
+### Dirst
 
-Files "Code.txt" and "CodeImproved.txt" contain the folder/file structure of the program (much more readable than manually creating the files + can put comments in it), from which the main program was created, by calling Dirst.exe with -e flag eg.
-`Dirst.exe -e Code.txt Code` 
+Dirst is an esoteric language, in which the program is represented by a tree of various folders and files (All information regarding Dirst is on: https://esolangs.org/wiki/Dirst).
+
+To run the program, move to the "Dirst" folder and type the following in the console:
+`Dirst.exe Code`
+
+The "Code.txt" file contains the structure of the folders/files tree of the program (this makes it much more readable than reading the code by traversing through folders and has an added advantage of allowing comments).
+The corresponding folders/files tree was then cretaed by calling Dirst.exe with an -e flag:
+`Dirst.exe -e Code.txt Code`.
